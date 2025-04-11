@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from blog.models import Post, Category
 from datetime import datetime
 
-
+ 
 def index(request):
     template_name = 'blog/index.html'
     post_list = Post.objects.filter(is_published=True,
